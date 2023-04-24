@@ -27,7 +27,7 @@ const InfoModal: React.FC<InfoModalProps> = ({visible, onClose}) => {
             onClose();
             closeModal();
         }, 300);
-    }, [onClose()]);
+    }, [onClose, closeModal()]);
 
     if(!visible){
         return null;
